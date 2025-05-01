@@ -34,7 +34,10 @@ devtools::install_github("tomgrizz/lakeontariospatial)
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-#library(lakeontariospatial)
-## basic example code
+library(lakeontariospatial)
+library(ggplot2)
+lake_o <- load_lake_ontario()
+ggplot(lake_o) +
+  geom_sf()
 ```
 

@@ -27,6 +27,12 @@ devtools::install_github("tomgrizz/lakeontariospatial)
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-#library(lakeontariospatial)
-## basic example code
+library(lakeontariospatial)
+library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 4.4.3
+lake_o <- load_lake_ontario()
+ggplot(lake_o) +
+  geom_sf()
 ```
+
+<img src="man/figures/README-example-1.png" width="100%" />
