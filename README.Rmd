@@ -36,8 +36,15 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(lakeontariospatial)
 library(ggplot2)
+library(sf)
+
+library
 lake_o <- load_lake_ontario()
 ggplot(lake_o) +
   geom_sf()
+
+zones <- lakeontariospatial::load_stocking_zones()
+plot(st_geometry(zones))
+
 ```
 
