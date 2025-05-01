@@ -7,10 +7,11 @@
 <!-- badges: end -->
 
 The goal of lakeontariospatial is to provide common Lake Ontario
-shapefiles for R users. Shapefiles have generally been imported as an sf
-object and also plotted as a base ggplot2 object. The sf objects follow
-the naming convention of shape\_\[area\]. The ggplot2 objects follow the
-naming convention of base\_\[area\].
+shapefiles for R users. Shapefiles have been converted to GeoPackage
+(.gpkg) format using the sf package, ensuring a single-file structure
+for easier management and integration. Each shapefile was read into R
+with sf::read_sf() and exported to the package’s inst/extdata/ folder
+using sf::st_write().
 
 ## Installation
 
