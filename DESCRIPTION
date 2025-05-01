@@ -1,0 +1,11 @@
+Package: lakeontariospatial
+Title: Lake Ontario Spatial Package
+Version: 0.0.0.1000
+Authors@R: 
+    person("Thomas", "Gristey", , "Thomas.Gristey@ontario.ca", role = c("aut", "cre"))
+Description: This package is designed to import spatial files of Lake Ontario for aquatic research and assessment.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
